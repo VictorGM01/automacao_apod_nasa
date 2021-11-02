@@ -13,12 +13,16 @@ def extrai_foto_do_site():
     global url_imagem
     url_imagem = navegador.current_url
 
+
 def extrai_descricao_da_foto():
-    pass
+    navegador.get('https://apod.nasa.gov/apod/astropix.html')
+
+    global descricao
+    descricao = navegador.find_element(by='xpath', value='/html/body/p[1]').text
 
 
 def encaminha_email():
     pass
 
 
-extrai_foto_do_site()
+extrai_descricao_da_foto()
