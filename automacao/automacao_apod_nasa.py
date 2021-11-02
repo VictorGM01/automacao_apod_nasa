@@ -4,3 +4,15 @@ import smtplib
 import email.message
 
 
+navegador = webdriver.Chrome('webdriver\chromedriver.exe')
+
+def extrai_foto_do_site():
+    pass
+
+
+def extrai_descricao_da_foto():
+    pass
+
+
+def encaminha_email():
+    pass
