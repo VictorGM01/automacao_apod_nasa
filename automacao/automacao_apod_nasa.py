@@ -7,8 +7,11 @@ import email.message
 navegador = webdriver.Chrome()
 
 def extrai_foto_do_site():
-    pass
+    navegador.get('https://apod.nasa.gov/apod/astropix.html')
+    navegador.find_element('xpath', '/html/body/center[1]/p[2]/a/img').click()
 
+    global url_imagem
+    url_imagem = navegador.current_url
 
 def extrai_descricao_da_foto():
     pass
@@ -16,3 +19,6 @@ def extrai_descricao_da_foto():
 
 def encaminha_email():
     pass
+
+
+extrai_foto_do_site()
