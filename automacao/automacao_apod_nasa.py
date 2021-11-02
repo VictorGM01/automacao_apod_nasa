@@ -62,7 +62,7 @@ def encaminha_email():
     """
 
     msg = MIMEMultipart()
-    msg['Subject'] = 'Astronomia - Foto do Dia'
+    msg['Subject'] = 'Foto do Dia - NASA'
     msg['From'] = 'victormarques8801@gmail.com'
     msg['To'] = 'victormarques8801@gmail.com'
     msg.attach(MIMEText(corpo_email, 'html'))
@@ -71,10 +71,11 @@ def encaminha_email():
     s.ehlo()
     s.starttls()
     s.login(msg['From'], SENHA)
-    s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
+    s.sendmail(msg['From'], [msg['To'], 'raphaelagferraz2@gmail.com'], msg.as_string().encode('utf-8'))
     print('Email enviado')
 
 
 extrai_foto_do_site()
 extrai_descricao_da_foto()
+traduz_descricao_da_foto()
 encaminha_email()
