@@ -42,6 +42,9 @@ def encaminha_email():
                     Foto de Hoje - NASA
                 </h1>
                 <p>
+                    Esta foto foi retirada do site oficial da NASA, chamado APOD, onde todos os dias uma foto/imagem relacionada à astronomia é publicada
+                </p>
+                <p>
                     {data.day} de novembro de {data.year}
                 </p>
                 <p>
@@ -51,12 +54,12 @@ def encaminha_email():
             <p>
                 Descrição da Imagem:
                 {descricao_traduzida}
-                
             </p>
             <p>
-                Descrição (Inglês)
+                Descrição (Inglês):
                 {descricao}
             </p>
+            <p>E-mail enviado automaticamente usando o Python :)</p>
         </body>
     </html>
     """
