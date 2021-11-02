@@ -4,7 +4,7 @@ import smtplib
 import email.message
 
 
-navegador = webdriver.Chrome('webdriver\chromedriver.exe')
+navegador = webdriver.Chrome('automacao\chromedriver.exe')
 
 def extrai_foto_do_site():
     pass
