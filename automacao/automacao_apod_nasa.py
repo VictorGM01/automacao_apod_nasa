@@ -34,13 +34,13 @@ def encaminha_email():
                 <h1>
                     Foto de Hoje - NASA
                 </h1>
+                <p>
+                    {data.day} de novembro de {data.year}
+                </p>
+                <p>
+                    <img src="{url_imagem}" width="600" height="300">
+                </p>
             </center>
-            <p>
-                {data.day} de novembro de {data.year}
-            </p>
-            <p>
-                <img src="{url_imagem}">
-            </p>
             <p>
                 {descricao}
             </p>
