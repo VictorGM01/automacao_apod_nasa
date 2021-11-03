@@ -70,6 +70,7 @@ def encaminha_email():
                 <p>
                     <img src="{url_imagem}" width="600" height="300">
                 </p>
+                <h3> {titulo} </h3>
             </center>
             <p>
                 {descricao_traduzida}
@@ -80,7 +81,7 @@ def encaminha_email():
     """
 
     msg = MIMEMultipart()
-    msg['Subject'] = 'Foto do Dia - NASA'
+    msg['Subject'] = f'Foto do Dia {data.day} - NASA'
     msg['From'] = 'victormarques8801@gmail.com'
     msg['To'] = 'victormarques8801@gmail.com'
     msg.attach(MIMEText(corpo_email, 'html'))
