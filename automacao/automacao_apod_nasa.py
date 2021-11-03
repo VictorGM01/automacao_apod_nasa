@@ -13,6 +13,10 @@ data = datetime.today()
 
 def extrai_foto_do_site():
     navegador.get('https://apod.nasa.gov/apod/astropix.html')
+
+    global titulo
+    titulo = navegador.find_element('xpath', '/html/body/center[2]/b[1]').text
+
     navegador.find_element('xpath', '/html/body/center[1]/p[2]/a/img').click()
 
     global url_imagem
