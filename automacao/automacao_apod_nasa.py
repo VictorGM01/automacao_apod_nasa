@@ -23,24 +23,27 @@ def extrai_descricao_da_foto():
     navegador.get('https://apod.nasa.gov/apod/astropix.html')
 
     global descricao
-    descricao = navegador.find_element(by='xpath', value='/html/body/p[1]').text
+    descricao = navegador.find_element(
+        by='xpath', value='/html/body/p[1]').text
 
 
 def traduz_descricao_da_foto():
     navegador.get('https://translate.google.com.br/?hl=pt-BR')
-    box = navegador.find_element('xpath',
-                                 '//*[@id="yDmH0d"]/c-wiz/div/div[2]/c-wiz/div[2]' +
-                                 '/c-wiz/div[1]/div[2]/div[2]/c-wiz[1]/span/span/' +
-                                 'div/textarea')
+    box =\
+        navegador.find_element('xpath',
+                               '//*[@id="yDmH0d"]/c-wiz/div/div[2]/' +
+                               'c-wiz/div[2]/c-wiz/div[1]/div[2]/div[2]/' +
+                               'c-wiz[1]/span/span/div/textarea')
     box.click()
     box.send_keys(descricao)
 
     time.sleep(10)
     global descricao_traduzida
-    descricao_traduzida = navegador.find_element('xpath',
-                                                 '//*[@id="yDmH0d"]/c-wiz/div/div[2]/' +
-                                                 'c-wiz/div[2]/c-wiz/div[1]/div[2]/' +
-                                                 'div[2]/c-wiz[2]/div[5]/div/div[1]').text
+    descricao_traduzida = \
+        navegador.find_element('xpath',
+                               '//*[@id="yDmH0d"]/c-wiz/div/div[2]/' +
+                               'c-wiz/div[2]/c-wiz/div[1]/div[2]/' +
+                               'div[2]/c-wiz[2]/div[5]/div/div[1]').text
 
 
 def encaminha_email():
@@ -53,7 +56,9 @@ def encaminha_email():
                     Foto de Hoje - NASA
                 </h1>
                 <p>
-                    Esta foto foi retirada do site oficial da NASA, chamado APOD, onde todos os dias uma foto/imagem relacionada à astronomia é publicada
+                    Esta foto foi retirada do site oficial da NASA,
+                    chamado APOD, onde todos os dias uma foto/imagem
+                    relacionada à astronomia é publicada
                 </p>
                 <p>
                     {data.day} de novembro de {data.year}
@@ -80,7 +85,8 @@ def encaminha_email():
     s.ehlo()
     s.starttls()
     s.login(msg['From'], SENHA)
-    s.sendmail(msg['From'], [msg['To'], 'raphaelagferraz2@gmail.com'], msg.as_string().encode('utf-8'))
+    s.sendmail(msg['From'], [msg['To'], 'raphaelagferraz2@gmail.com'],
+               msg.as_string().encode('utf-8'))
     print('Email enviado')
 
 
