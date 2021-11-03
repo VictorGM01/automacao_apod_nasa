@@ -3,7 +3,7 @@ from datetime import datetime
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from translate import Translator
+import time
 
 from credencial import SENHA
 
@@ -27,9 +27,20 @@ def extrai_descricao_da_foto():
 
 
 def traduz_descricao_da_foto():
-    tradutor = Translator(from_lang="English", to_lang="Portuguese")
+    navegador.get('https://translate.google.com.br/?hl=pt-BR')
+    box = navegador.find_element('xpath',
+                                 '//*[@id="yDmH0d"]/c-wiz/div/div[2]/c-wiz/div[2]' +
+                                 '/c-wiz/div[1]/div[2]/div[2]/c-wiz[1]/span/span/' +
+                                 'div/textarea')
+    box.click()
+    box.send_keys(descricao)
+
+    time.sleep(10)
     global descricao_traduzida
-    descricao_traduzida = tradutor.translate(descricao)
+    descricao_traduzida = navegador.find_element('xpath',
+                                                 '//*[@id="yDmH0d"]/c-wiz/div/div[2]/' +
+                                                 'c-wiz/div[2]/c-wiz/div[1]/div[2]/' +
+                                                 'div[2]/c-wiz[2]/div[5]/div/div[1]').text
 
 
 def encaminha_email():
@@ -52,12 +63,7 @@ def encaminha_email():
                 </p>
             </center>
             <p>
-                Descrição da Imagem:
                 {descricao_traduzida}
-            </p>
-            <p>
-                Descrição (Inglês):
-                {descricao}
             </p>
             <p>E-mail enviado automaticamente usando o Python :)</p>
         </body>
