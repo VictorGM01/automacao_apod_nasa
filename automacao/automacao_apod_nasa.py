@@ -41,7 +41,7 @@ def traduz_descricao_da_foto():
     box.click()
     box.send_keys(descricao)
 
-    time.sleep(10)
+    time.sleep(20)
     global descricao_traduzida
     descricao_traduzida = \
         navegador.find_element('xpath',
@@ -92,7 +92,10 @@ def encaminha_email():
     s.login(msg['From'], SENHA)
     s.sendmail(msg['From'], [msg['To'], 'raphaelagferraz2@gmail.com'],
                msg.as_string().encode('utf-8'))
-    print('Email enviado')
+
+    print('-------------------------------------------------------')
+    print('Email enviado com sucesso aos destinatários informados!')
+    print('-------------------------------------------------------')
 
 
 extrai_foto_do_site()
