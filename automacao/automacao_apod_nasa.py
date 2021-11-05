@@ -90,7 +90,8 @@ def encaminha_email():
     s.ehlo()
     s.starttls()
     s.login(msg['From'], SENHA)
-    s.sendmail(msg['From'], [msg['To'], 'raphaelagferraz2@gmail.com'],
+    s.sendmail(msg['From'], [msg['To'], 'raphaelagferraz2@gmail.com',
+                             'najaguiland@gmail.com'],
                msg.as_string().encode('utf-8'))
 
     print('-------------------------------------------------------')
