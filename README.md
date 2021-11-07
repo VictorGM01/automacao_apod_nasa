@@ -18,3 +18,7 @@ Automação do envio das imagens publicadas diariamente pela NASA, através do s
 :date: Verifica a data do dia da execução - útil para a edição do corpo do e-mail
 
 :e-mail: Encaminha a Imagem, seu título e sua explicação traduzida aos e-mails definidos
+
+### Status
+Status do Projeto: concluído :heavy_check_mark:
+
