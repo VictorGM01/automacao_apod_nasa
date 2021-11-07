@@ -26,3 +26,9 @@ Automação do envio das imagens publicadas diariamente pela NASA, através do s
 ### Status :chart_with_upwards_trend:
 Status do Projeto: concluído :heavy_check_mark:
 
+### Pré Requisitos
+Antes de começar, é preciso que você tenha instalado em sua máquina as seguintes ferramentas:
+
+[Git](https://git-scm.com/), [Python](https://www.python.org/downloads/release/python-390/).
+
+Além disso, é interessante que você tenha um editor para trabalhar com o código. Recomendo o uso do [Pycharm](https://www.jetbrains.com/pycharm/download/#section=windows)
