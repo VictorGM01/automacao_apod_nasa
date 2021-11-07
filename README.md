@@ -5,7 +5,7 @@ Automação do envio das imagens publicadas diariamente pela NASA, através do s
 
 <center>
     <p>
-    <img src="https://img.shields.io/static/v1?label=Linguagem&message=python&color=blue&style=for-the-badge"/> 
+    <img src="https://img.shields.io/static/v1?label=Linguagem&message=python&color=blue&style=for-the-badge&logo=PYTHON"/> 
     <img src="https://img.shields.io/static/v1?label=python&message=3.8.9&color=green&style=for-the-badge"/>
     </p>
 </center>
@@ -19,6 +19,11 @@ Automação do envio das imagens publicadas diariamente pela NASA, através do s
 
 :e-mail: Encaminha a Imagem, seu título e sua explicação traduzida aos e-mails definidos
 
-### Status
+### Demonstração da Aplicação
+<h1 align="center">
+  <img src="/assets/demonstracao.png" />
+</h1>
+
+### Status :chart_with_upwards_trend:
 Status do Projeto: concluído :heavy_check_mark:
 
