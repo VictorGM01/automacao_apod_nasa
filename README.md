@@ -22,7 +22,7 @@ Automação do envio das imagens publicadas diariamente pela NASA, através do s
 ### Demonstração da Aplicação
 <p align="center"> Print do e-mail recebido no dia 7 de novembro de 2021 </p>
 <h1 align="center">
-  <img src="/assets/demonstracao.png" />
+  <img src="/assets/demonstracao.png" width="600" height="400"/>
 </h1>
 
 ### Status :chart_with_upwards_trend:
