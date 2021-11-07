@@ -20,6 +20,7 @@ Automação do envio das imagens publicadas diariamente pela NASA, através do s
 :e-mail: Encaminha a Imagem, seu título e sua explicação traduzida aos e-mails definidos
 
 ### Demonstração da Aplicação
+<p align="center"> Print do e-mail recebido no dia 7 de novembro de 2021 </p>
 <h1 align="center">
   <img src="/assets/demonstracao.png" />
 </h1>
