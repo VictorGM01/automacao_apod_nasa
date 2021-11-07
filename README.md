@@ -12,4 +12,9 @@ Automação do envio das imagens publicadas diariamente pela NASA, através do s
 
 ### Funcionalidades :checkered_flag:
 🚀 Busca a imagem do dia no site APOD, da NASA
+
 :books: Traduz a explicação da imagem para português
+
+:date: Verifica a data do dia da execução - útil para a edição do corpo do e-mail
+
+:e-mail: Encaminha a Imagem, seu título e sua explicação traduzida aos e-mails definidos
