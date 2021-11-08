@@ -67,6 +67,8 @@ pip install ...
 
 # Edite a variável "msg['To']" com o e-mail de destinatário
 
+# Edite a variável "msg['CCO']" com o e-mail que deverá estar em cópia
+
 # Após seguir as etapas anteriores, rode o código pelo editor, ou pelo terminal, da seguinte maneira:
 automacao_apod_nasa.py
 
