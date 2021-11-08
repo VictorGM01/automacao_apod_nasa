@@ -72,3 +72,6 @@ Para a construção deste projeto foram utilizadas as seguintes ferramentas e bi
 - [Time](https://docs.python.org/3/library/time.html)
 - [Email.mime](https://docs.python.org/pt-br/3.7/library/email.mime.html)
 - [Smtplib](https://docs.python.org/3/library/smtplib.html)
+
+### Desenvolvedor
+[<img src="https://avatars.githubusercontent.com/u/86068797?s=400&u=043c0b1479770ac997f0cf5a31c986a2815ce810&v=4" width=115 > <br> <sub> Victor G. Marques </sub>](https://github.com/Diana-ops) 
