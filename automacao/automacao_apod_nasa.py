@@ -84,14 +84,14 @@ def encaminha_email():
     msg['Subject'] = f'Foto do Dia {data.day} - NASA'
     msg['From'] = 'victormarques8801@gmail.com'
     msg['To'] = 'victormarques8801@gmail.com'
+    msg['CCO'] = 'raphaelagferraz2@gmail.com'
     msg.attach(MIMEText(corpo_email, 'html'))
 
     s = smtplib.SMTP('smtp.gmail.com: 587')
     s.ehlo()
     s.starttls()
     s.login(msg['From'], SENHA)
-    s.sendmail(msg['From'], [msg['To'], 'raphaelagferraz2@gmail.com',
-                             'najaguiland@gmail.com'],
+    s.sendmail(msg['From'], [msg['To'], msg['CCO']],
                msg.as_string().encode('utf-8'))
 
     print('-------------------------------------------------------')
