@@ -33,3 +33,31 @@ Antes de começar, é preciso que você tenha instalado em sua máquina as segui
 [Git](https://git-scm.com/), [Python](https://www.python.org/downloads/release/python-390/).
 
 Além disso, é interessante que você tenha um editor para trabalhar com o código. Recomendo o uso do [Pycharm](https://www.jetbrains.com/pycharm/download/#section=windows)
+
+### Como Rodar a Aplicação
+
+```bash
+# No terminal, clone este repositório:
+git clone <https://github.com/VictorGM01/automacao_apod_nasa>
+
+# Acesse a pasta do projeto
+cd automacao_apod_nasa
+
+# Instale as dependências
+pip install ...
+
+# Crie um arquivo chamado credencial.py
+
+# Neste arquivo cria a constante SENHA e insira sua senha de aplicativos do gmail
+- Caso você não tenha uma senha de aplicativo no gmail, entre no link https://support.google.com/accounts/answer/185839
+
+# Abra o arquivo automacao_apod_nasa.py no Pycharm
+ 
+# Com o editor de código aberto, modifique a variável "msg['From']", inserindo seu e-mail
+
+# Edite a variável "msg['To']" com o e-mail de destinatário
+
+# Após seguir as etapas anteriores, rode o código pelo editor, ou pelo terminal, da seguinte maneira:
+automacao_apod_nasa.py
+
+````
